@@ -127,7 +127,7 @@ At this stage, you will create a static-nodes.json with all the Enode that was p
 ### **- Run the Nodes**
 
 ```
- nohup ../utils/geth --datadir=$pwd --syncmode 'full' --port 30311 --http --http.rpcprefix "/"  --http.corsdomain "*" --http.addr 0.0.0.0 --http.port "8545" --http.api "db, eth, net, web3, personal" --ws --ws.port 8546 --ws.addr 0.0.0.0 --ws.origins "*" --ws.api "web3, eth, personal, net" &
+nohup ./utils/geth --datadir=$pwd --syncmode 'full' --port 30311 --http --http.rpcprefix "/"  --http.corsdomain "*" --http.addr 0.0.0.0 --http.port "8545" --http.api "db, eth, net, web3, personal" --ws --ws.port 8546 --ws.addr 0.0.0.0 --ws.origins "*" --ws.api "web3, eth, personal, net" </dev/null >/dev/null 2>&1 &
 ```
 
 ## License
